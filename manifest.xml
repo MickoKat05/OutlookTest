@@ -8,8 +8,6 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Insert Freshservice Ticket Helper"/>
   <Description DefaultValue="Insert Freshservice ticket form when sending to support@firstmajestic.com"/>
-  <IconUrl DefaultValue="https://mickokat85.github.io/icon.png"/>
-  <HighResolutionIconUrl DefaultValue="https://mickokat85.github.io/icon-hires.png"/>
   <SupportUrl DefaultValue="https://firstmajestic.com/"/>
   <AppDomains>
     <AppDomain>https://mickokat85.github.io</AppDomain>
