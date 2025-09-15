@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="TaskPaneApp">
+  <Id>f3b8c3f0-1234-4c3e-9a0e-123456789abc</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>First Majestic</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Freshservice Ticket Helper"/>
+  <Description DefaultValue="Insert Freshservice ticket form when sending to support@firstmajestic.com"/>
+  <SupportUrl DefaultValue="https://firstmajestic.com"/>
+  <AppDomains>
+    <AppDomain>https://mickokat05.github.io</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="Mailbox"/>
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemCompose">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://mickokat05.github.io/OutlookTest/taskpane.html"/>
+        <RequestedHeight>250</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit"/>
+  </Rule>
+</OfficeApp>
