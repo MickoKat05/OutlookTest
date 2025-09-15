@@ -6,8 +6,8 @@
   <Version>1.0.0.0</Version>
   <ProviderName>First Majestic</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="First Majestic Ticket Form"/>
-  <Description DefaultValue="Formulario de tickets para Freshservice"/>
+  <DisplayName DefaultValue="Freshservice Ticket Helper"/>
+  <Description DefaultValue="Insert Freshservice ticket form when sending to support@firstmajestic.com"/>
   <SupportUrl DefaultValue="https://firstmajestic.com"/>
   <AppDomains>
     <AppDomain>https://mickokat05.github.io</AppDomain>
@@ -21,7 +21,7 @@
     </Sets>
   </Requirements>
   <FormSettings>
-    <Form xsi:type="ItemRead">
+    <Form xsi:type="ItemCompose">
       <DesktopSettings>
         <SourceLocation DefaultValue="https://mickokat05.github.io/OutlookTest/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
@@ -29,4 +29,7 @@
     </Form>
   </FormSettings>
   <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit"/>
+  </Rule>
 </OfficeApp>
