@@ -19,7 +19,7 @@
   <FormSettings>
     <Form xsi:type="ItemCompose">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://localhost/taskpane.html"/>
+        <SourceLocation DefaultValue="https://mickokat05.github.io/OutlookTest/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
