@@ -1,7 +1,9 @@
-<?xml version="1.0" ?>
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
-  <Id>fd3dd346-3170-1924-43cd-9ade12345678abc</Id>
-  <Version>1.0.0.0</Version>
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="TaskPaneApp">
+  <Id>fd3d0346-3170-1924-43cd-9ade1234567aabc</Id>
+  <Version>1.0.0.8</Version>
   <ProviderName>First Majestic</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Insert Freshservice Ticket Helper"/>
@@ -27,3 +29,4 @@
     <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit"/>
   </Rule>
 </OfficeApp>
+
