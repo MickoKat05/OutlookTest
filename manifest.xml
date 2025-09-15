@@ -2,15 +2,15 @@
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:type="TaskPaneApp">
-  <Id>f3d8c370-1924-43c4-9ade-123456789abc</Id>
-  <Version>1.0.0.8</Version>
+  <Id>fd3dd346-3170-1924-43cd-9ade12345678abc</Id>
+  <Version>1.0.0.0</Version>
   <ProviderName>First Majestic</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Freshservice Ticket Helper"/>
+  <DisplayName DefaultValue="Insert Freshservice Ticket Helper"/>
   <Description DefaultValue="Insert Freshservice ticket form when sending to support@firstmajestic.com"/>
   <IconUrl DefaultValue="https://mickokat85.github.io/icon.png"/>
   <HighResolutionIconUrl DefaultValue="https://mickokat85.github.io/icon-hires.png"/>
-  <SupportUrl DefaultValue="https://firstmajestic.com"/>
+  <SupportUrl DefaultValue="https://firstmajestic.com/"/>
   <AppDomains>
     <AppDomain>https://mickokat85.github.io</AppDomain>
   </AppDomains>
@@ -18,8 +18,8 @@
     <Host Name="Mailbox"/>
   </Hosts>
   <Requirements>
-    <Sets DefaultMinVersion="1.1">
-      <Set Name="Mailbox"/>
+    <Sets>
+      <Set Name="Mailbox" MinVersion="1.1"/>
     </Sets>
   </Requirements>
   <FormSettings>
@@ -30,11 +30,6 @@
       </DesktopSettings>
     </Form>
   </FormSettings>
-  <Permissions>ReadWriteItem</Permissions>
-  <Rule xsi:type="RuleCollection" Mode="Or">
-    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit"/>
-  </Rule>
-</OfficeApp>
   <Permissions>ReadWriteItem</Permissions>
   <Rule xsi:type="RuleCollection" Mode="Or">
     <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit"/>
