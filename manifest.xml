@@ -2,13 +2,13 @@
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:type="TaskPaneApp">
-  <Id>fd3d0346-3170-1924-43cd-9ade1234567aabc</Id>
-  <Version>1.0.0.8</Version>
-  <ProviderName>First Majestic</ProviderName>
+  <Id>e5c5e7e1-8c6a-4e8a-9b6a-123456789abc</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Insert Freshservice Ticket Helper"/>
-  <Description DefaultValue="Insert Freshservice ticket form when sending to support@firstmajestic.com"/>
-  <SupportUrl DefaultValue="https://firstmajestic.com/"/>
+  <DisplayName DefaultValue="Contoso Task Pane Add-in"/>
+  <Description DefaultValue="A simple task pane add-in for Outlook."/>
+  <SupportUrl DefaultValue="https://contoso.com/support"/>
   <AppDomains>
     <AppDomain>https://mickokat05.github.io</AppDomain>
   </AppDomains>
@@ -29,4 +29,3 @@
     <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit"/>
   </Rule>
 </OfficeApp>
-
