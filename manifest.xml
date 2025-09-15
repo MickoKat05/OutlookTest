@@ -8,11 +8,9 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="First Majestic Ticket Form"/>
   <Description DefaultValue="Formulario de tickets para Freshservice"/>
-  <IconUrl DefaultValue="https://MickoKat05.github.io/OutlookTest/icon.png"/>
-  <HighResolutionIconUrl DefaultValue="https://MickoKat05.github.io/OutlookTest/icon.png"/>
   <SupportUrl DefaultValue="https://firstmajestic.com"/>
   <AppDomains>
-    <AppDomain>https://MickoKat05.github.io</AppDomain>
+    <AppDomain>https://mickokat05.github.io</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox"/>
@@ -25,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://MickoKat05.github.io/OutlookTest/taskpane.html"/>
+        <SourceLocation DefaultValue="https://mickokat05.github.io/OutlookTest/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
