@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
+           xsi:type="MessageComposeCommand">
+  <Id>f3b6c7e2-9d4a-4e8a-b7c1-abcdef123456</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>FirstMajestic</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Freshservice Ticket Composer"/>
+  <Description DefaultValue="Auto-fill ticket fields when composing to support@firstmajestic.com"/>
+  <SupportUrl DefaultValue="https://firstmajestic.com/support"/>
+  <AppDomains>
+    <AppDomain>https://mickokat05.github.io</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="Mailbox" MinVersion="1.3"/>
+    </Sets>
+  </Requirements>
+  <Permissions>ReadWriteItem</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.0">
+    <VersionOverride>
+      <Requirements>
+        <bt:Sets DefaultMinVersion="1.3">
+          <bt:Set Name="Mailbox"/>
+        </bt:Sets>
+      </Requirements>
+      <Hosts>
+        <Host xsi:type="MailHost">
+          <DesktopFormFactor>
+            <FunctionFile Url="https://mickokat05.github.io/OutlookTest/function.js"/>
+            <ExtensionPoint xsi:type="MessageComposeCommandSurface">
+              <OfficeTab id="TabDefault">
+                <Group id="msgComposeGroup">
+                  <Label resid="groupLabel"/>
+                  <Control xsi:type="Button" id="msgComposeButton">
+                    <Label resid="buttonLabel"/>
+                    <Supertip>
+                      <Title resid="buttonTitle"/>
+                      <Description resid="buttonDescription"/>
+                    </Supertip>
+                    <Icon>
+                      <bt:Image size="16" resid="icon16"/>
+                      <bt:Image size="32" resid="icon32"/>
+                      <bt:Image size="80" resid="icon80"/>
+                    </Icon>
+                    <Action xsi:type="ExecuteFunction">
+                      <FunctionName>insertFreshserviceFields</FunctionName>
+                    </Action>
+                  </Control>
+                </Group>
+              </OfficeTab>
+            </ExtensionPoint>
+          </DesktopFormFactor>
+        </Host>
+      </Hosts>
+      <Resources>
+        <bt:Images>
+          <bt:Image id="icon16" DefaultValue="https://mickokat05.github.io/assets/icon16.png"/>
+          <bt:Image id="icon32" DefaultValue="https://mickokat05.github.io/assets/icon32.png"/>
+          <bt:Image id="icon80" DefaultValue="https://mickokat05.github.io/assets/icon80.png"/>
+        </bt:Images>
+        <bt:ShortStrings>
+          <bt:String id="groupLabel" DefaultValue="Freshservice Tools"/>
+          <bt:String id="buttonLabel" DefaultValue="Insert Ticket Fields"/>
+          <bt:String id="buttonTitle" DefaultValue="Insert Ticket Template"/>
+        </bt:ShortStrings>
+        <bt:LongStrings>
+          <bt:String id="buttonDescription" DefaultValue="Insert ticket fields for Freshservice support."/>
+        </bt:LongStrings>
+      </Resources>
+    </VersionOverride>
+  </VersionOverrides>
+</OfficeApp>
